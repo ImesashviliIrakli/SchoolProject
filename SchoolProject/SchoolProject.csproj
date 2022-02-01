@@ -59,6 +59,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SchoolDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SchoolDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchoolDataSet1.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,6 +95,17 @@
     </None>
     <None Include="SchoolDataSet.xss">
       <DependentUpon>SchoolDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolDataSet1.xsc">
+      <DependentUpon>SchoolDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchoolDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchoolDataSet1.xss">
+      <DependentUpon>SchoolDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

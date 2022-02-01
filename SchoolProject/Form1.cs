@@ -22,7 +22,7 @@ namespace SchoolProject
         #region AddPerson
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection("server=(LocalDb)\\LocalDbDemo; database=School; Integrated Security = True");
+            SqlConnection connection = new SqlConnection("server=DESKTOP-1S0L8CE; database=School; Integrated Security = True");
 
             try
             {
@@ -95,7 +95,7 @@ namespace SchoolProject
         #region DeletePerson
         private void button2_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection("server=(LocalDb)\\LocalDbDemo; database=School; Integrated Security = True");
+            SqlConnection connection = new SqlConnection("server=DESKTOP-1S0L8CE; database=School; Integrated Security = True");
 
             try
             {
@@ -142,7 +142,7 @@ namespace SchoolProject
         #region UpdatePerson
         private void button3_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection("server=(LocalDb)\\LocalDbDemo; database=School; Integrated Security = True");
+            SqlConnection connection = new SqlConnection("server=DESKTOP-1S0L8CE; database=School; Integrated Security = True");
             connection.Open();
 
 
@@ -183,7 +183,7 @@ namespace SchoolProject
 
         private void button4_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection("server=(LocalDb)\\LocalDbDemo; database=School; Integrated Security = True");
+            SqlConnection connection = new SqlConnection("server=DESKTOP-1S0L8CE; database=School; Integrated Security = True");
 
             try
             {
@@ -259,6 +259,8 @@ namespace SchoolProject
         private void Form1_Load(object sender, EventArgs e)
         {
             this.personTableAdapter.Fill(this.schoolDataSet.Person);
+            
+
         }
         private void label1_Click(object sender, EventArgs e)
         {
@@ -275,6 +277,9 @@ namespace SchoolProject
 
         }
 
-        
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
