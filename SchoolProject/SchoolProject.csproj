@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Course.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Course.Designer.cs">
+      <DependentUpon>Course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CourseInstructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CourseInstructor.Designer.cs">
+      <DependentUpon>CourseInstructor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Department.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +77,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SchoolDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="StudentGrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentGrade.Designer.cs">
+      <DependentUpon>StudentGrade.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Course.resx">
+      <DependentUpon>Course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CourseInstructor.resx">
+      <DependentUpon>CourseInstructor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Department.resx">
       <DependentUpon>Department.cs</DependentUpon>
     </EmbeddedResource>
@@ -80,6 +104,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StudentGrade.resx">
+      <DependentUpon>StudentGrade.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
